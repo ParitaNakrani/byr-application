@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".taxi"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select a Location"
+            android:layout_marginLeft="15dp"
+            android:textSize="28dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/txtlocation"
+            android:background="@drawable/rectangle_2_shape"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="50dp"
+            android:hint="Location"
+            android:drawablePadding="15dp"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/ic_outline_location_on_24"
+            android:textSize="20dp"
+            android:layout_marginEnd="15dp"
+            android:textColorHint="@color/type_here____color"
+            android:layout_width="320dp"
+            android:layout_height="45dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        app:cardCornerRadius="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date &amp; Time"
+            android:layout_marginLeft="15dp"
+            android:textSize="28dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_marginTop="5dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From"
+                android:layout_marginTop="50dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="80dp"
+                android:textColor="@color/type_here____color"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To"
+                android:layout_marginTop="50dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="120dp"
+                android:textColor="@color/type_here____color"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp">
+
+
+            <TextView
+                android:id="@+id/textfromdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23/10/2022"
+                android:layout_marginTop="50dp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                android:drawablePadding="10dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="18dp"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/texttodate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="50dp"
+                android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                android:drawablePadding="10dp"
+                android:text="28/10/2022"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:background="@drawable/rectangle_8_shape"
+            android:layout_width="320dp"
+            android:layout_marginTop="120dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="145dp">
+
+            <TextView
+                android:id="@+id/textfromtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:textSize="20dp"
+                android:text="10:00 AM"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_outline_access_time_24"
+                android:drawablePadding="10dp"/>
+
+            <TextView
+                android:id="@+id/texttotime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:textSize="20dp"
+                android:text="10:00 AM"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_outline_access_time_24"
+                android:drawablePadding="10dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnbook"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/actionbar"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="BOOK NOW"/>
+
+</LinearLayout>

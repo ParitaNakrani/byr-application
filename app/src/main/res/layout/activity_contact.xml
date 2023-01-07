@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@drawable/ic_round_call_24"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="10dp"
+                android:text="Phone : "
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="11dp"
+                android:text="(+91)90545 41298"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <View
+                android:background="@drawable/rectangle_12_shape"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="65dp"
+                android:layout_width="428dp"
+                android:layout_height="1dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@drawable/ic_round_attach_email_24"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="10dp"
+                android:text="E-mail : "
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="11dp"
+                android:text="bookyourride@gmail.com"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <View
+                android:background="@drawable/rectangle_12_shape"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="65dp"
+                android:layout_width="428dp"
+                android:layout_height="1dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@drawable/ic_baseline_location"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="10dp"
+                android:text="Location : "
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="11dp"
+                android:text="Pal , Adajan - Surat"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <View
+                android:background="@drawable/rectangle_12_shape"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="65dp"
+                android:layout_width="428dp"
+                android:layout_height="1dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@drawable/facebook_round_color_1"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="10dp"
+                android:text="Facebook : "
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="11dp"
+                android:text="Book Your Ride"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <View
+                android:background="@drawable/rectangle_12_shape"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="65dp"
+                android:layout_width="428dp"
+                android:layout_height="1dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@drawable/google_1"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="10dp"
+                android:text="Google : "
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="11dp"
+                android:text="www.bookyourride.com"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <View
+                android:background="@drawable/rectangle_12_shape"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="65dp"
+                android:layout_width="428dp"
+                android:layout_height="1dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+

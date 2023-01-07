@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.my1stapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.My1stApp">
+        <activity android:name=".txi_book"
+            android:parentActivityName=".Home_Page"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"></activity>
+        <activity android:name=".Successful"
+            android:parentActivityName=".Home_Page"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"/>
+        <activity android:name=".Booking_Confirm"
+            android:parentActivityName=".Home_Page"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"/>
+        <activity android:name=".Book_NOw"
+            android:parentActivityName=".Home_Page"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"/>
+        <activity
+            android:name=".checkcars"
+            android:parentActivityName=".Home_Page"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".bike"
+            android:parentActivityName=".Home_Page"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar" />
+        <activity
+            android:name=".car"
+            android:parentActivityName=".Home_Page"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar" />
+        <activity android:name=".taxi" />
+        <activity
+            android:name=".driver_car"
+            android:parentActivityName=".Home_Page"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar" />
+        <activity
+            android:name=".LogOut"
+            android:parentActivityName=".Home_Page" />
+        <activity
+            android:name=".Profile"
+            android:parentActivityName=".Home_Page"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar" />
+        <activity
+            android:name=".Contact"
+            android:parentActivityName=".Home_Page"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar" />
+        <activity
+            android:name=".About"
+            android:parentActivityName=".Home_Page"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar" />
+        <activity
+            android:name=".Home_Page"
+            android:label="@string/title_activity_home_page" />
+        <activity
+            android:name=".ForgotPasswordPhone"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".ForgotPassword"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".signup"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".splash_screen"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

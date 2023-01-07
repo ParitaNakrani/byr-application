@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/homeimage">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#BA0B0B0C"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DRIVE WITH DRIVER"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="28dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="serif"/>
+
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/ddriveown"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp">
+
+
+                    <View
+                        android:background="@drawable/rectangle_8_shape"
+                        android:layout_width="90dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="2dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enjoy Your Ride.!!"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:fontFamily="serif"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/white"/>
+
+                    <View
+                        android:background="@drawable/rectangle_8_shape"
+                        android:layout_width="90dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_height="2dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available Cars"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="15dp"
+            android:textSize="24dp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="260dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:columnCount="2"
+                    android:rowCount="5">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/car1"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="110dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/sonet_htk_plus"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sonet HTK Plus"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="2dp"
+                                android:fontFamily="monospace"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="9dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="5 seater"
+                                    android:textSize="17dp"/>
+
+                                <TextView
+                                    android:id="@+id/car1pr"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="6000"
+                                    android:layout_marginLeft="54dp"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/price"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" /day"
+                                    android:textSize="12dp"/>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btndcar1"
+                                android:layout_width="105dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="15dp"
+                                android:backgroundTint="@color/actionbar"
+                                android:layout_gravity="center"
+                                android:text="BOOK NOW"
+                                android:textSize="12dp"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/car2"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="110dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/audi_a4"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Audi A4"
+                                android:layout_marginLeft="5dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+                                android:layout_marginTop="2dp"
+                                android:fontFamily="monospace"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="9dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="5 seater"
+                                    android:textSize="17dp"/>
+
+                                <TextView
+                                    android:id="@+id/car2pr"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="6000"
+                                    android:layout_marginLeft="54dp"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/price"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" /day"
+                                    android:textSize="12dp"/>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btndcar2"
+                                android:layout_width="105dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="15dp"
+                                android:backgroundTint="@color/actionbar"
+                                android:layout_gravity="center"
+                                android:text="BOOK NOW"
+                                android:textSize="12dp"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/car3"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="110dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/fortuner_4x2"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Fortuner 4x2"
+                                android:layout_marginLeft="5dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+                                android:layout_marginTop="2dp"
+                                android:fontFamily="monospace"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="9dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="7 seater"
+                                    android:textSize="17dp"/>
+
+                                <TextView
+                                    android:id="@+id/car3pr"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="6000"
+                                    android:layout_marginLeft="54dp"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/price"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" /day"
+                                    android:textSize="12dp"/>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btndcar3"
+                                android:layout_width="105dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="15dp"
+                                android:backgroundTint="@color/actionbar"
+                                android:layout_gravity="center"
+                                android:text="BOOK NOW"
+                                android:textSize="12dp"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/car4"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="110dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/gls_400"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mercedes"
+                                android:layout_marginLeft="5dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+                                android:layout_marginTop="2dp"
+                                android:fontFamily="monospace"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="9dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="7 seater"
+                                    android:textSize="17dp"/>
+
+                                <TextView
+                                    android:id="@+id/car4pr"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="6000"
+                                    android:layout_marginLeft="54dp"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/price"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" /day"
+                                    android:textSize="12dp"/>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btndcar4"
+                                android:layout_width="105dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="15dp"
+                                android:backgroundTint="@color/actionbar"
+                                android:layout_gravity="center"
+                                android:text="BOOK NOW"
+                                android:textSize="12dp"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/car5"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="110dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/jaguar_xe"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Jaguar XE"
+                                android:layout_marginLeft="5dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+                                android:layout_marginTop="2dp"
+                                android:fontFamily="monospace"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="9dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="5 seater"
+                                    android:textSize="17dp"/>
+
+                                <TextView
+                                    android:id="@+id/car5pr"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="6000"
+                                    android:layout_marginLeft="54dp"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/price"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" /day"
+                                    android:textSize="12dp"/>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btndcar5"
+                                android:layout_width="105dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="15dp"
+                                android:backgroundTint="@color/actionbar"
+                                android:layout_gravity="center"
+                                android:text="BOOK NOW"
+                                android:textSize="12dp"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/car6"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="110dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/mini_cooper"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mini Cooper"
+                                android:layout_marginLeft="5dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+                                android:layout_marginTop="2dp"
+                                android:fontFamily="monospace"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="9dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="7 seater"
+                                    android:textSize="17dp"/>
+
+                                <TextView
+                                    android:id="@+id/car6pr"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="6000"
+                                    android:layout_marginLeft="54dp"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/price"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" /day"
+                                    android:textSize="12dp"/>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btndcar6"
+                                android:layout_width="105dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="15dp"
+                                android:backgroundTint="@color/actionbar"
+                                android:layout_gravity="center"
+                                android:text="BOOK NOW"
+                                android:textSize="12dp"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                </GridLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>
